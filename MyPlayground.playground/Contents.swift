@@ -68,10 +68,10 @@ let cart: [ProductInfo] = [
 for index in 0 ..< cart.count {
     let product = cart[index]
     
-    print("--------------1------------")
+    print("\n----------------------------")
     
     
-    print("Name: \(product.name), Price")
+    print("Назва товару: \(product.name), Ціна: \(product.price) \(product.currency) \nСокет: \(product.socet), Процессор: \(product.processor)")
     
    
  
