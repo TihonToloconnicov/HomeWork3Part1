@@ -210,8 +210,18 @@ repeat {
  */
 print("---------------5-------------")
 
+counter = 0
 
+            repeat {
+    let product = cart[counter]
+    counter += 1
 
+   
+if product.price < 5000, product.socet == "s1151"{
+    print("Назва товару: \(product.name), Ціна: \(product.price)\nСокет: \(product.socet)")
+    print("\n---------------------------")
+}
+} while counter < cart.count
 
 /*
  
