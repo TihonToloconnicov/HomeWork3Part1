@@ -169,7 +169,7 @@ repeat {
     let product = cart[counter]
     counter += 1
     
-    print("\n----------------------------")
+    print("\n---------------------------")
     
     print("Назва товару: \(product.name) \nСокет: \(product.socet)")
 } while counter < cart.count
