@@ -59,7 +59,7 @@ let cart: [ProductInfo] = [
  */
 
 
-
+print("---------------1--------------")
 
     
     
@@ -80,7 +80,7 @@ for index in 0 ..< cart.count {
 
 }
 
-    
+print("---------------2-------------")
 
 /*
  
@@ -99,10 +99,16 @@ for index in 0 ..< cart.count {
     ------------------------------------------------------
  */
 
+for productInfo in cart {
+    
+    print("\n----------------------------")
+    print("Назва товару: \(productInfo.name), \nПроцессор: \(productInfo.processor)")
+    
+
+}
 
 
-
-
+print("---------------3-------------")
 /*
  
  Пункт 1.3
