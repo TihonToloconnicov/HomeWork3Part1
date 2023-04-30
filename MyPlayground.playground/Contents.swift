@@ -427,9 +427,35 @@ printProducts(maxPrice: 4500.0)
  */
 
 
+func printProductInfo(proccesor: String) -> ProductInfo? {
+    var maxProductPrice: Double = 0
+    var maxProduct: ProductInfo?
+    
+   
+    for index in 0 ..< cart.count {
+        let product = cart[index]
+        
+        if product.price  > maxProductPrice, product.processor == proccesor {
+            maxProductPrice = product.price
+            maxProduct = product
+        }
 
+    }
+    
+    
+    return maxProduct
+    
+}
 
+let proccesor = "Intel"
 
+print("------------------- Найдорожчий товар за процесором \(proccesor) -------------------------------")
+
+let product = printProductInfo(proccesor: proccesor)
+
+print(product)
+
+print("---------------------------------------")
 /*
  
  Розділ 3 - Перечислення / Enum
