@@ -223,6 +223,14 @@ if product.price < 5000, product.socet == "s1151"{
 }
 } while counter < cart.count
 
+    
+   
+ 
+    
+   
+
+
+
 /*
  
  Розділ 1 - Потік керування
@@ -267,7 +275,28 @@ if product.price < 5000, product.socet == "s1151"{
     
  */
 
+for index in 0 ..< cart.count {
+    let product = cart[index]
+    
+    print("\n----------- \(index) -----------------")
+    
+    let processorStringValue = product.processor
 
+    switch processorStringValue {
+    case "Intel":
+        print("Name: \(product.name), price: \(product.price) \(product.currency) ")
+    case "AMD":
+        print("Name: \(product.name), price: \(product.price) \(product.currency) ")
+     
+    default:
+        print("")
+     
+    }
+    
+    print("\n-----------------------------")
+   
+
+}
 
 /*
  
