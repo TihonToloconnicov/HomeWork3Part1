@@ -334,8 +334,20 @@ for index in 0 ..< cart.count {
  
  */
 
-
-
+func printProductsWithIntelProc(){
+    
+    print("\n-----------Intel---------------")
+    
+    for index in 0 ..< cart.count {
+        let product = cart[index]
+        
+        
+        print("\(index + 1) Name: \(product.name)")
+        
+    }
+    print("\n--------------------------")
+}
+printProductsWithIntelProc()
 
 /*
  
