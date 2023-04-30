@@ -495,9 +495,13 @@ var processorType: ProcessorType = .intel
  
  */
 
-enum 
+enum Currency: String{
+   case uah = "UAH"
+   case usd = "USD"
+   case eur = "EUR"
+}
 
-
+var currency: Currency = .eur
 
 /*
  
