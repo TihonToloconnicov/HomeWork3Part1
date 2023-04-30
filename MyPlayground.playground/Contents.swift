@@ -549,8 +549,20 @@ print(motherBoard)
  
  */
 
+class Product {
+    var name: String = ""
+    var price: Double = 0.0
+    var currency: Currency = .eur
+    var motherBoard: MotherBoard = MotherBoard()
+}
 
-
-
+var newProduct: Product = Product()
+print(newProduct)
+newProduct.name = "456"
+newProduct.price = 0.1
+newProduct.currency = .usd
+newProduct.motherBoard.processer = .intel
+newProduct.motherBoard.socet = "s1151"
+print(newProduct)
 
 
