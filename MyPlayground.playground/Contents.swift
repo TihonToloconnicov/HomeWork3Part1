@@ -379,8 +379,29 @@ printProductsWithIntelProc()
  */
 
 
+func printProducts(maxPrice: Double){
+    
+    print(" ------------------- Товари з ціною менше \(maxPrice) -------------------------------")
+    var counter: Int = 1
+    for index in 0 ..< cart.count {
+        let product = cart[index]
+        
+        
+        if product.price < maxPrice{
+            print("\(counter) Name: \(product.name), Price: \(product.price) \(product.currency)")
+            counter += 1
+        }
+        
+        
+        
+        
+    
 
+    }
+    print(" --------------------------------------------------")
+}
 
+printProducts(maxPrice: 4500.0)
 
 
 /*
